@@ -53,3 +53,13 @@ export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH=\
 export PATH=/opt/local/bin:/usr/local/share/npm/bin:$HOME/bib:$HOME/bin:$GOPATH/bin:$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH:/Users/${USER}/Library/Android/sdk/platform-tools/:$PATH
+
+# ======== DOCKER ========
+alias dc="docker-compose"
+alias dcup="docker-compose --build -d"
+alias dcx="docker-compose exec"
+alias dcd="docker-compose down"
+alias dcl='docker-compose logs'
+alias dclf='docker-compose logs -f'
+alias dkt='docker stats --format "table {{.Name}}\t{{.CPUPerc}}\t{{.MemUsage}}\t{{.NetIO}}"'
+alias dkps="docker ps --format '{{.ID}} ~ {{.Names}} ~ {{.Status}} ~ {{.Image}}'"
